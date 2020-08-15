@@ -1,22 +1,18 @@
 import React from "react";
+import Button from "./Button";
+import Input from "./Input";
+import Heading from "./Heading";
+import List from "./List";
 
 function App() {
   return (
     <div className="container">
-      <div className="heading">
-        <h1>To-Do List</h1>
-      </div>
+      <Heading />
       <div className="form">
-        <input type="text" />
-        <button>
-          <span>Add</span>
-        </button>
+        <Input />
+        <Button />
       </div>
-      <div>
-        <ul>
-          <li>A Item </li>
-        </ul>
-      </div>
+      <List />
     </div>
   );
 }
